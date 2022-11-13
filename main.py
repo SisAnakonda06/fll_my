@@ -1,21 +1,15 @@
-# importing the required module
-import matplotlib.pyplot as plt
+import turtle
+import time
 
-# x axis values
-x = [1,2,3]
-# corresponding y axis values
-y = [2,4,1]
+turtle.screensize(10, 10)
+t = turtle.Turtle()
+t.left(90)
 
-# plotting the points
-plt.plot(x, y)
+t.forward(400)
+t.backward(790)
+x, y = t.xcor, t.ycor
+print(x)
+print(y)
+t.goto(0,0)
 
-# naming the x axis
-plt.xlabel('x - axis')
-# naming the y axis
-plt.ylabel('y - axis')
-
-# giving a title to my graph
-plt.title('My first graph!')
-
-# function to show the plot
-plt.show()
+time.sleep(1)
