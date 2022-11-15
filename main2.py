@@ -8,15 +8,15 @@ def Translate(X,Y,angle,distance):                #defines function
     Xfinal = X + dX                               
     Yfinal = Y + dY
     return Xfinal, Yfinal
-turtle.screensize(10, 10)
+
 t = turtle.Turtle()
 t.left(90)
 
 t.forward(400)
 t.backward(790)
-x, y = Translate(0, 0, 4, 36.168)
+x, y = Translate(0, 0, -50, 36.168)
 print(x, y)
-
+t.goto(0, 0)
 t.goto(x,y)
-
-time.sleep(1)
+t
+time.sleep(10)
