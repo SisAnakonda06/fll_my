@@ -12,8 +12,8 @@ distance = 0
 while True:
     def Translate(X,Y,angle,distance):                #defines function
         # 0 degrees = North, 90 = East, 180 = South, 270 = West
-        dY = distance*math.sin(math.radians(angle))   #change in y 
-        dX = distance*math.cos(math.radians(angle))   #change in x 
+        dY = distance*math.cos(math.radians(angle))   #change in y 
+        dX = distance*math.sin(math.radians(angle))   #change in x 
         Xfinal = X + dX                               
         Yfinal = Y + dY
         return Xfinal, Yfinal
