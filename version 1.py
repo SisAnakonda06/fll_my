@@ -5,6 +5,7 @@ t = turtle.Turtle()
 t.left(90)
 t.forward(400)
 t.backward(790)
+t.goto(0, 0)
 X = 0
 Y = 0
 angle = 0
@@ -22,7 +23,7 @@ while True:
     
 
     x, y = Translate(X, Y, angle, distance)
-    t.goto(0, 0)
+    
     t.goto(x,y)
     X, Y = t.pos()
     print(X, Y)
