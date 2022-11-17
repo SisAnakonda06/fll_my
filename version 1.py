@@ -21,7 +21,6 @@ while True:
 
     
     
-
     x, y = Translate(X, Y, angle, distance)
     
     t.goto(x,y)
